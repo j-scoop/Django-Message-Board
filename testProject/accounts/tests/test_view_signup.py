@@ -1,9 +1,9 @@
 from django.contrib.auth.models import User
 from django.urls import reverse, resolve
 from django.test import TestCase
-from .views import signup
 
-from .forms import SignUpForm
+from ..views import signup
+from ..forms import SignUpForm
 
 
 class SignUpTests(TestCase):
@@ -40,6 +40,7 @@ class SuccessfulSignupTests(TestCase):
         url = reverse('signup')
         data = {
             'username': 'john',
+            'email': 'john@doe.com',
             'password1': 'abcdef123456',
             'password2': 'abcdef123456'
         }
