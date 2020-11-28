@@ -1,0 +1,4 @@
+testProject/venv/
+testProject/db.sqlite3
+testProject/config.py
+notes.txt
